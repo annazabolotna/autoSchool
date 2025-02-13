@@ -3,9 +3,19 @@ package edu.autoschool.modul2;
 import java.util.Scanner;
 
 public class StringTasks {
-    private final Scanner myObj = new Scanner(System.in);
 
-    public void task1() {
+    public static void main(String[] args) {
+        System.out.println("----------------");
+        task1();
+        System.out.println("----------------");
+        task2();
+        System.out.println("----------------");
+        task3();
+    }
+
+    private static final Scanner myObj = new Scanner(System.in);
+
+    public static void task1() {
         //1 Дана строка. Вывести первый, последний и средний (если он есть) символы.
         String row = "winter";
         System.out.println(row.substring(0,1));
@@ -27,7 +37,7 @@ public class StringTasks {
         System.out.println("Number of spaces in '" + row2 + "' is " + countSpaces);
     }
 
-    public void task2() {
+    public static void task2() {
         //2 Найти в строке указанную подстроку и заменить ее на новую.
         // Строку, ее подстроку для замены и новую подстроку вводит пользователь.
         System.out.println("Type a main row:");
@@ -43,7 +53,7 @@ public class StringTasks {
         System.out.println(mainRow.replace(wordToLookAt, wordToChange));
     }
 
-    public void task3() {
+    public static void task3() {
         //3 Вводится строка слов, разделенных пробелами. Найти самое длинное слово и вывести его на экран.
         // Случай, когда самых длинных слов может быть несколько, не обрабатывать.
         System.out.println("Type several words:");

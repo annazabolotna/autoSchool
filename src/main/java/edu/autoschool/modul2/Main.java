@@ -14,12 +14,6 @@ public class Main {
         System.out.println("Task 2: " + sumNumbers(29));
         System.out.println("Task 3: " + Math.round(22.85F));
         task4(0,2,5);
-
-        //ᛃ Ссылочные типы. Строки.
-        StringTasks str = new StringTasks();
-        str.task1();
-        str.task2();
-        str.task3();
     }
 
     public static void printHelloName() {
